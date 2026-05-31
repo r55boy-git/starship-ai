@@ -1,24 +1,32 @@
 # Starship AI
 
-Learning AI by building real-world projects.
+A practical AI learning project built by Sean Williams.
 
-## Goal
+## Purpose
 
-Create an AI-powered SpaceX and Starship intelligence assistant that can:
+Learn AI engineering by building a real-world application that:
 
-- Collect news and launch information
-- Summarise developments
-- Answer questions
-- Generate briefings
+- Collects SpaceX and Starship information
+- Processes and analyses data
+- Generates AI-powered briefings
+- Answers questions about launches and missions
+
+## Technology
+
+- Python
+- Git
+- GitHub
+- VS Code
+
+## Progress
+
+### Day 1
+
+- Development environment created
+- GitHub repository created
+- Python virtual environment configured
+- First API integration completed
 
 ## Author
 
 Sean Williams
-
-## Status
-
-Day 1 complete:
-- Python environment created
-- VS Code configured
-- Git repository created
-- First API integration completed
