@@ -1,11 +1,17 @@
-import requests
+import os
 
-launches = requests.get(
-    "https://api.spacexdata.com/v4/launches"
-).json()
+from dotenv import load_dotenv
+from openai import OpenAI
 
-print(f"Number of launches returned: {len(launches)}")
-print()
+load_dotenv()
 
-for launch in launches[-5:]:
-    print(launch["name"], "-", launch["date_utc"])
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
+
+response = client.responses.create(
+    model="gpt-5",
+    input="Write a short SpaceX mission briefing in 3 bullet points."
+)
+
+print(response.output_text)
